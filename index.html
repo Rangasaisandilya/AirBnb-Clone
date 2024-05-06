@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Holiday rentals, cabins, beaches & more</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-section">
+            <img src="/assets/Airbnb-Logo.wine.png" class="logo">
+            <div class="nav-items">
+                <div><a href="" class="bold-text">Stays</a></div>
+                <div><a href="">Experiences</a></div>
+                <div><a href="">Online Experiences</a></div>
+            </div>
+            <div class="nav-profile">
+                <p>Airbnb Your Home</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+                <div class="profile-button-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-search-section">
+            <div class="nav-search-bar">
+                <div class="nav-search-destinations">
+                    <small>Where</small>
+                    <small>Search Destinations</small>
+                </div>
+                <div class="side-border"></div>
+                <div class="nav-search-destinations">
+                    <small>Check in</small>
+                    <small>Add Dates</small>
+                </div>
+                <div class="side-border"></div>
+                <div class="nav-search-destinations">
+                    <small>Check out</small>
+                    <small>Add Dates</small>
+                </div>
+                <div class="side-border"></div>
+                <div class="nav-search-destinations">
+                    <small>Who</small>
+                    <small>Add guests</small>
+
+                </div>
+                <div class="nav-search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="border-line"></div>
+    <main>
+        <section class="icons-section">
+            <div class="icon-container">
+                <img src="/assets/i7.jpeg" width="30" height="30">
+                <small>Amazing Pools</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i8.jpeg" width="30" height="30">
+                <small>Farms</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i1.jpeg" width="30" height="30">
+                <small>Countryside</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i3.jpeg" width="30" height="30">
+                <small>Bed & breakfasts</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i10.jpeg" width="30" height="30">
+                <small>Lakefront</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i9.jpeg" width="30" height="30">
+                <small>Amazing Views</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i8.jpeg" width="30" height="30">
+                <small>Farms</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i4.jpeg" width="30" height="30">
+                <small>Cabins</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i11.jpeg" width="30" height="30">
+                <small>OMG!</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i6.jpeg" width="30" height="30">
+                <small>Camps</small>
+            </div>
+            <div class="icon-container">
+                <img src="/assets/i5.jpeg" width="30" height="30">
+                <small>Castle</small>
+            </div>
+            <div class="next-icon">
+                <img src="/assets/svg/Holiday Homes & Apartment Rentals - Airbnb - Airbnb-8.svg" width="20" height="20">
+            </div>
+            <div class="filter-section">
+                <img src="/assets/svg/Holiday Homes & Apartment Rentals - Airbnb - Airbnb-9.svg" width="20" height="20">
+                <small>Filters</small>
+            </div>
+            <div class="filter-section">
+                <small>Display Before Total Taxes</small>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-toggle-on" viewBox="0 0 16 16">
+                    <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8" />
+                </svg>
+
+            </div>
+        </section>
+        <section class="cards-section">
+            <div class="card">
+                <img src="assets/d4.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Raia,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">537 Kilometeres away</p>
+                    <p class="gray-text">17-22 May</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;12,322</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d2.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Banglore,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 3.34</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">541 Kilometeres away</p>
+                    <p class="gray-text">17-22 June</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;4,3326</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d3.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Chennai,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.53</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">232 Kilometeres away</p>
+                    <p class="gray-text">17-22 July</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;11,023</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d4.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Pune,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">122 Kilometeres away</p>
+                    <p class="gray-text">17-22 April</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;9,021</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d1.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Raia,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">537 Kilometeres away</p>
+                    <p class="gray-text">17-22 May</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;4,3326</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d1.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Raia,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">537 Kilometeres away</p>
+                    <p class="gray-text">17-22 May</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;4,3326</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d1.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Raia,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">537 Kilometeres away</p>
+                    <p class="gray-text">17-22 May</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;4,3326</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/d1.webp" class="card-image">
+                <div class="card-body">
+                    <div class="rating-section">
+                        <p class="bold-text">Raia,India</p>
+                        <span class="rating-info">
+                            <img src="/assets/svg/start.svg" width="14" height="14">
+                            <p> 4.88</p>
+                        </span>
+                    </div>
+                    <p class="gray-text">537 Kilometeres away</p>
+                    <p class="gray-text">17-22 May</p>
+                    <span style="display: flex; gap:0.3rem"><p class="bold-text">&#x20b9;4,3326</p>night</span>
+                    <img src="/assets/svg/heart.svg" width="25" height="25" class="heart-icon">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-header">
+             <h2>Inspiration for future getaways</h2>
+            <div class="footer-header-nav">
+                <p>Popular</p>
+                <p>Arts & culture</p>
+                <p>Outdoors</p>
+                <p>Mountains</p>
+                <p>Beach</p>
+                <p>Unique Statys</p>
+                <p>Categories</p>
+                <p>Things to do</p>
+            </div>
+            <div class="border-line"></div>
+            <div class="border-line-bottom-selected"></div>
+            <div class="footer-header-main">
+
+                <div class="first-section">
+                    <div class="main-footer-content">
+                        <p class="bold-text">Canmore</p>
+                        <p class="gray-text">flatrentals</p>
+                     </div>
+                     <div class="main-footer-content">
+                         <p class="bold-text">Marbella</p>
+                         <p class="gray-text">House rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Mizas</p>
+                         <p class="gray-text">Flat rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Prescott</p>
+                         <p class="gray-text">Cottage rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                          <p class="bold-text">Scottdale</p>
+                          <p class="gray-text">Holiday rentals</p>
+                       </div>
+                       <div class="main-footer-content">
+                          <p class="bold-text">Casta Slide</p>
+                          <p class="gray-text">Apartment rentals</p>
+                       </div>
+                </div>
+                <div class="first-section">
+                    <div class="main-footer-content">
+                        <p class="bold-text">Canmore</p>
+                        <p class="gray-text">flatrentals</p>
+                     </div>
+                     <div class="main-footer-content">
+                         <p class="bold-text">Marbella</p>
+                         <p class="gray-text">House rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Mizas</p>
+                         <p class="gray-text">Flat rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Prescott</p>
+                         <p class="gray-text">Cottage rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                          <p class="bold-text">Scottdale</p>
+                          <p class="gray-text">Holiday rentals</p>
+                       </div>
+                       <div class="main-footer-content">
+                          <p class="bold-text">Casta Slide</p>
+                          <p class="gray-text">Apartment rentals</p>
+                       </div>
+                </div>
+                <div class="first-section">
+                    <div class="main-footer-content">
+                        <p class="bold-text">Canmore</p>
+                        <p class="gray-text">flatrentals</p>
+                     </div>
+                     <div class="main-footer-content">
+                         <p class="bold-text">Marbella</p>
+                         <p class="gray-text">House rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Mizas</p>
+                         <p class="gray-text">Flat rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                         <p class="bold-text">Prescott</p>
+                         <p class="gray-text">Cottage rentals</p>
+                      </div>
+                      <div class="main-footer-content">
+                          <p class="bold-text">Scottdale</p>
+                          <p class="gray-text">Holiday rentals</p>
+                       </div>
+                       <div class="main-footer-content">
+                          <p class="bold-text">Casta Slide</p>
+                          <p class="gray-text">Apartment rentals</p>
+                       </div>
+                </div>
+
+             
+            </div>
+        </section>
+        <div class="border-line"></div>
+        <section class="footer-main">
+                <div class="fotter-main-nav">
+                    <p class="bold-text">Support</p>
+                    <p class="gray-text text-underline">Help Centre</p>
+                    <p class="gray-text text-underline">Air Cover</p>
+                    <p class="gray-text text-underline">Anti-Discrimination</p>
+                    <p class="gray-text text-underline">Disablity Support</p>
+                    <p class="gray-text text-underline">Cancellation Options</p>
+                    <p class="gray-text text-underline">Report Neighbourhood concern</p>
+                </div>
+
+                <div class="fotter-main-nav">
+                    <p class="bold-text">Hosting</p>
+                    <p class="gray-text text-underline">Airbnb your home</p>
+                    <p class="gray-text text-underline">Air Cover for your hosts</p>
+                    <p class="gray-text text-underline">Community forum</p>
+                    <p class="gray-text text-underline">Hosting resources</p>
+                    <p class="gray-text text-underline">Hosting responsibly</p>
+                    <p class="gray-text text-underline">Join a free Hosting class</p>
+                </div>
+
+                <div class="fotter-main-nav">
+                    <p class="bold-text">Airbnb</p>
+                    <p class="gray-text text-underline">Newsroom</p>
+                    <p class="gray-text text-underline">New features</p>
+                    <p class="gray-text text-underline">Careers</p>
+                    <p class="gray-text text-underline">Investors</p>
+                    <p class="gray-text text-underline">Enquiry</p>
+                    <p class="gray-text text-underline">Airbnb.org emergency stays</p>
+                </div>
+        </section>
+        <div class="border-line compressed"></div>
+        <section class="footer-bottom">
+            <div class="footer1">
+                <p class="gray-text text-underline">2024 Airbnb, Inc.</p>
+                <p class="gray-text dot">.</p>
+                <p class="gray-text text-underline">Privacy</p>
+                <p class="gray-text dot">.</p>
+                <p class="gray-text text-underline">Terms</p>
+                <p class="gray-text dot">.</p>
+                <p class="gray-text text-underline">Sitemap</p>
+                <p class="gray-text dot">.</p>
+                <p class="gray-text text-underline">Company details</p>
+            </div>
+
+            <div class="footer2">
+                <span class="footer-globe">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+                <p>English(IN)</p>
+                </span>
+                <p>&#x20b9;INR</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>
+            </div>
+                
+        </section>
+    </footer>
+
+</body>
+
+</html>
