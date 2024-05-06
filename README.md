@@ -1,4 +1,4 @@
-                                                      air bnb static web application with responsive layout
+air bnb static web application with responsive layout
 
 
 
